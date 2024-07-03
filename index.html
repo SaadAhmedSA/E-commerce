@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khareedo.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        
+        #main{
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 3%;
+            background-color: black;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            padding-bottom: 10px;
+        }
+        .abc{
+            border: 2px solid black;
+            margin: 2%;
+            padding:2%;
+            width: 260px;
+            border-radius: 15px;
+          background-color: white;
+          transition: all 0.3s;
+        }
+        .btn{
+            background: #000;
+            color: white;
+            height: 40px;
+            display:inline-block ;
+            border-radius: 10px;
+            /* position: relative; */
+            /* bottom: -5px; */
+        }
+        #nav{
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 2px solid rgb(238, 235, 235);
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: black;
+            color: white;
+        }
+        .abc:hover{
+           transform: scale(1.08);
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <h1>Khareedo.com</h1>
+        <select name="drop" id="drop">
+            <option value="All">All items</option>
+           
+        </select>
+    </div>
+    <div id="main">
+        
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
