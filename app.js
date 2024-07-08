@@ -16,6 +16,13 @@ for (let x=0; x<data.length;x++) {
 }
 for(let i =0 ; i<data.length;i++){
 maindiv.innerHTML +=`
+ <div id="nav">
+        <h1>Khareedo.com</h1>
+        <select name="drop" id="drop">
+            <option value="All">All items</option>
+           
+        </select>
+    </div>
 <div class="abc">
             <img src="${data[i].image}" alt="">
             <h4>${data[i].title.slice(0,20)}</h4>
@@ -35,7 +42,15 @@ maindiv.innerHTML=" "
     for (var i =0 ; i<data.length;i++) {
         if(drop.value == data[i].category){
           
-            maindiv.innerHTML +=`<div class="abc">
+            maindiv.innerHTML +=`
+             <div id="nav">
+        <h1>Khareedo.com</h1>
+        <select name="drop" id="drop">
+            <option value="All">All items</option>
+           
+        </select>
+    </div>
+            <div class="abc">
                <img src="${data[i].image}" alt="">
             <h4>${data[i].title.slice(0,20)}</h4>
             <p><b>Price : </b>$${data[i].price}</p>
@@ -45,7 +60,14 @@ maindiv.innerHTML=" "
         </div>`
         }else if(drop.value == "All"){
             maindiv.innerHTML +=
-           ` <div class="abc">
+           ` <div id="nav">
+        <h1>Khareedo.com</h1>
+        <select name="drop" id="drop">
+            <option value="All">All items</option>
+           
+        </select>
+    </div>
+           <div class="abc">
             <img src="${data[i].image}" alt="">
             <h4>${data[i].title.slice(0,20)}</h4>
             <p><b>Price : </b>$${data[i].price}</p>
